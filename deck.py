@@ -20,22 +20,22 @@ THIS_FILE = Path(__file__).resolve()
 THIS_DIR = THIS_FILE.parent
 CYBORG_DEV_IMAGE_PATH = THIS_DIR / "img" / "cyborg_dev_02.jpeg"
 
-app = init_app(THIS_FILE)
+# app = init_app(THIS_FILE)
 deck = Deck(name="AI assisted coding")
-app.deck = deck
+# app.deck = deck
 
-def send_message(message: str) -> None:
-    global app
-    app.set_message_temporarily(
-        Text(
-            message,
-            style=Style(dim=True),
-        ),
-        delay=10,
-    )
+# def send_message(message: str) -> None:
+#     global app
+#     app.set_message_temporarily(
+#         Text(
+#             message,
+#             style=Style(dim=True),
+#         ),
+#         delay=10,
+#     )
 
 def edit_this_file(suspend: SuspendType) -> None:
-    send_message("edit_this_file!")
+    # send_message("edit_this_file!")
     with suspend():
         edit(filename=THIS_FILE)
 
@@ -74,11 +74,11 @@ CONTENT = {
 
 """,
     },
-    "1️. AI Image": {
+    "1. AI Image": {
         "align": "justify",
         "image_path": CYBORG_DEV_IMAGE_PATH,
     },
-    "1️. Acceptance process": {
+    "1. Acceptance process": {
         "align": "justify",
         "text": """
 ## Acceptance process
@@ -87,14 +87,17 @@ CONTENT = {
 * Business Case                                   - in progress ⏳
 
 ## Tools being evaluated
-  - GitHub `Copilot` (Live Demo)
-  - JetBrains `AI Assistant` (similar functionalities)
+- GitHub `Copilot` (Live Demo)
+- JetBrains `AI Assistant` (similar functionalities)
+  
+## Costs
+- 19 USD / month / user
   
 [comment]: <> (https://controlant.atlassian.net/servicedesk/customer/portal/30/PRS-2256)  
-[comment]: <> ()  
+[comment]: <> (https://controlant.atlassian.net/servicedesk/customer/portal/30/PRS-2388)
 """,
     },
-    "2️. Demo": {
+    "2. Demo": {
         "align": "justify",
         "text": """
 ## Demo of GitHub Copilot
@@ -109,7 +112,7 @@ CONTENT = {
 
 """,
     },
-    "2️. Shortcuts & UI, Agents": {
+    "2. Shortcuts & UI, Agents": {
         "align": "justify",
         "text": """
 ## Shortcuts & UI
@@ -131,7 +134,7 @@ CONTENT = {
 
 """,
     },
-    "2️. Inline": {
+    "2. Inline": {
         "align": "justify",
         "text": """
 ## Inline hints
@@ -142,7 +145,7 @@ CONTENT = {
         
 """,
     },
-    "2️. Slash commands": {
+    "2. Slash commands": {
         "align": "justify",
         "text": """
 ## Slash commands
@@ -163,7 +166,7 @@ prompt: data is not stored in db
 
 """,
     },
-    "2️. Slash commands 2": {
+    "2. Slash commands 2": {
         "align": "justify",
         "text": """
 ## Slash commands - continued
@@ -182,7 +185,7 @@ pytest -r  test_app.py
 ```
 """,
     },
-    "2️. Slash commands 3": {
+    "2. Slash commands 3": {
         "align": "justify",
         "text": """
 ## Slash commands - continued
@@ -202,7 +205,7 @@ def update(todo_id):
         
 """,
     },
-    "3️. Bonus": {
+    "3. Bonus": {
         "align": "justify",
         "text": """
 ## __BONUS__ Demo of local code assistant
@@ -218,11 +221,20 @@ Toolchain:
 
 """,
     },
-    
     "The End": {
         "align": "center",
         "text": """
 __Thank You!__
+""",
+    },
+    "Credits": {
+        "align": "left",
+        "text": """
+# Credits
+
+This presentations has been created using [Spiel](www.github.com/JoshKarpel/spiel) - a terminal-based presentation tool for programmers.
+
+You can find the source code of this presentation [here](https://github.com/HubertReX/AI_asissted_coding_presentation).
 """,
     },
 #     "First": {
@@ -326,8 +338,8 @@ for title, content in CONTENT.items():
         deck.add_slides(make_slide_md(title_prefix=title, **content))
 
 if __name__ == "__main__":
-    # present(__file__)
+    present(__file__)
     
     # print(app.deck._slides[0].bindings)
     # app.action_last_slide()
-    app.run()
+    # app.run()
