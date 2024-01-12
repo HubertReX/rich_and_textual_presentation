@@ -89,10 +89,12 @@ CONTENT = {
 ## Tools being evaluated
 - GitHub `Copilot` (Live Demo)
 - JetBrains `AI Assistant` (similar functionalities)
-  
-## Costs
+
+## Common features
 - 19 USD / month / user
-  
+- based on OpenAI (support the same list of languages)
+- integrated with IDE (VS Code, JetBrains products)
+
 [comment]: <> (https://controlant.atlassian.net/servicedesk/customer/portal/30/PRS-2256)  
 [comment]: <> (https://controlant.atlassian.net/servicedesk/customer/portal/30/PRS-2388)
 """,
@@ -100,16 +102,29 @@ CONTENT = {
     "2. Demo": {
         "align": "justify",
         "text": """
-## Demo of GitHub Copilot
+# Demo of GitHub Copilot
 
-`VS Code` Plugins:
+## VS Code Plugins:
 
 - GitHub `Copilot` - autocomplete-style suggestions
 - GitHub `Copilot Chat` - conversational AI assistance
 
+## Sample project
+
+- Simple `Todo` list application
+- `Python Flask` web application
+- `SQLAlchemy` ORM plus `SQLite` database
+- `semantic-ui` CSS framework
+
 [comment]: <> (https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 [comment]: <> (https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
 
+""",
+    },
+    "2. Sample project": {
+        "align": "center",
+        "text": """
+DEMO
 """,
     },
     "2. Shortcuts & UI, Agents": {
@@ -139,9 +154,10 @@ CONTENT = {
         "text": """
 ## Inline hints
 
-- sort by _title_
-- separate _id_ and _title_
-- make _id_ bigger and blue
+- sort by _title_ (list)
+- sort by _title_ (query)
+- check if id is _None_ (update)
+
         
 """,
     },
@@ -159,9 +175,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 - `/fix` - fix the code
 
 ```python
-remove db.session.commit() from add()
-
-prompt: data is not stored in db
+todo is not deleted in db
 ```
 
 """,
@@ -193,11 +207,19 @@ pytest -r  test_app.py
 - `/chat` - chat with Copilot
 
 ```python
-# example 1: add new route that returns all todos as json
+# example 1: separate _id_ and _title_
 ```
 
 ```python
-# example 2: rewrite selected function by adding type hints to all variables
+# example 2: make _id_ bigger and blue
+```
+
+```python
+# example 3: add new route that returns all todos as json
+```
+
+```python
+# example 4: rewrite selected function by adding type hints to all variables
 
 @app.get("/update/<int:todo_id>")
 def update(todo_id):
@@ -227,14 +249,19 @@ Toolchain:
 __Thank You!__
 """,
     },
-    "Credits": {
+    "PS": {
         "align": "left",
         "text": """
-# Credits
+# Post Scriptum
 
 This presentations has been created using [Spiel](www.github.com/JoshKarpel/spiel) - a terminal-based presentation tool for programmers.
 
 You can find the source code of this presentation [here](https://github.com/HubertReX/AI_asissted_coding_presentation).
+
+Why in `Spiel`?
+- to **learn** something new
+- because I **love** terminal apps ❤️
+- not to be `tool driven` (apps like `PowerPoint` influence the way we create presentations)
 """,
     },
 #     "First": {
