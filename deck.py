@@ -1,5 +1,5 @@
 # import asyncio
-
+import pyfiglet
 from textwrap import dedent
 from pathlib import Path
 from click import edit
@@ -19,6 +19,59 @@ from spiel.renderables.image import Image
 THIS_FILE = Path(__file__).resolve()
 THIS_DIR = THIS_FILE.parent
 CYBORG_DEV_IMAGE_PATH = THIS_DIR / "img" / "cyborg_dev_02.jpeg"
+
+# https://github.com/wasi-master/gradient_figlet/blob/main/gradient_figlet/__main__.py
+good_gradients = {
+    "Roseanna": ["#ffafbd", "#ffc3a0"],
+    "Sexy Blue": ["#2193b0", "#6dd5ed"],
+    "Purple Love": ["#cc2b5e", "#753a88"],
+    "Piglet": ["#ee9ca7", "#ffdde1"],
+    # "Mauve": ["#42275a", "#734b6d"],
+    "50 Shades of Grey": ["#bdc3c7", "#2c3e50"],
+    "A Lost Memory": ["#de6262", "#ffb88c"],
+    "Socialive": ["#06beb6", "#48b1bf"],
+    "Cherry": ["#eb3349", "#f45c43"],
+    "Pinky": ["#dd5e89", "#f7bb97"],
+    "Lush": ["#56ab2f", "#a8e063"],
+    "Kashmir": ["#614385", "#516395"],
+    "Tranquil": ["#eecda3", "#ef629f"],
+    "Pale Wood": ["#eacda3", "#d6ae7b"],
+    "Green Beach": ["#02aab0", "#00cdac"],
+    "Sha La La": ["#d66d75", "#e29587"],
+    "Frost": ["#000428", "#004e92"],
+    "Almost": ["#ddd6f3", "#faaca8"],
+    "Virgin America": ["#7b4397", "#dc2430"],
+    "Endless River": ["#43cea2", "#185a9d"],
+    "Purple White": ["#ba5370", "#f4e2d8"],
+    "Bloody Mary": ["#ff512f", "#dd2476"],
+    "Can you feel the love tonight": ["#4568dc", "#b06ab3"],
+    "Bourbon": ["#ec6f66", "#f3a183"],
+    "Dusk": ["#ffd89b", "#19547b"],
+    "Relay": ["#3a1c71", "#ffaf7b"],
+    "Decent": ["#4ca1af", "#c4e0e5"],
+    "Sweet Morning": ["#ff5f6d", "#ffc371"],
+    "Scooter": ["#36d1dc", "#5b86e5"],
+    "Celestial": ["#c33764", "#1d2671"],
+    # "Royal": ["#141e30", "#243b55"],
+    "Ed's Sunset Gradient": ["#ff7e5f", "#feb47b"],
+    "Peach": ["#ed4264", "#ffedbc"],
+    "Sea Blue": ["#2b5876", "#4e4376"],
+    "Orange Coral": ["#ff9966", "#ff5e62"],
+    "Aubergine": ["#aa076b", "#61045f"],
+}
+from colour import Color, rgb2hex
+
+def figlet_gradient(text: str, gradient="Bloody Mary", font="roman"):
+    gradient = good_gradients.get(gradient, "Bloody Mary")
+    color1 = Color(gradient[0])
+    color2 = Color(gradient[1])
+    lines = pyfiglet.figlet_format(text, font=font).split("\n")
+    gradient_colors = list(color1.range_to(color2, len(lines)))
+    rich_text = [] # Text()
+    for c, l in zip(gradient_colors, lines):
+        # rich_text.append(l + "\n", style=c.hex_l)
+        rich_text.append(f"[{c.hex_l}]{l}[/]")
+    return "\n".join(rich_text)
 
 # app = init_app(THIS_FILE)
 deck = Deck(name="AI assisted coding")
@@ -121,11 +174,10 @@ CONTENT = {
 
 """,
     },
-    "2. Sample project": {
+    "2. Sample project - rich": {
         "align": "center",
-        "text": """
-DEMO
-""",
+        "text": figlet_gradient("DEMO", gradient="Relay", font="epic"),
+        # slant, epic, alligator, block, cosmic, roman, script, rounded
     },
     "2. Shortcuts & UI, Agents": {
         "align": "justify",
@@ -243,11 +295,11 @@ Toolchain:
 
 """,
     },
-    "The End": {
+    "The End - rich": {
         "align": "center",
-        "text": """
-__Thank You!__
-""",
+        "text": figlet_gradient("Thank you!", gradient="Bloody Mary", font="roman"),
+            #f"[yellow]{pyfiglet.figlet_format('Thank you !', font='twin_cob')}[/]",
+        # slant, epic, alligator, block, cosmic, roman, script, rounded
     },
     "PS": {
         "align": "left",
@@ -261,6 +313,7 @@ You can find the source code of this presentation [here](https://github.com/Hube
 Why in `Spiel`?
 - to **learn** something new
 - because I **love** terminal apps ❤️
+- it's based on pure code (Python)
 - not to be `tool driven` (apps like `PowerPoint` influence the way we create presentations)
 """,
     },
@@ -314,7 +367,7 @@ def make_slide_txt(
     v_align="middle"
 ) -> Slide:
     def content() -> RenderableType:
-        return Align(text, align=align, vertical=v_align)
+        return Align(Text.from_markup(text), align=align, vertical=v_align)
 
     return Slide(title=f"{title_prefix}", content=content, bindings=CUSTOM_BINDINGS)
 
@@ -361,11 +414,16 @@ def make_slide_md(
 for title, content in CONTENT.items():
     if "IMAGE" in title.upper():
         deck.add_slides(make_slide_img(title_prefix=title, **content))
+    elif "RICH" in title.upper():
+        deck.add_slides(make_slide_txt(title_prefix=title, **content))
     else:
         deck.add_slides(make_slide_md(title_prefix=title, **content))
 
 if __name__ == "__main__":
     present(__file__)
+    # from rich import print
+    # for key in good_gradients.keys():
+    #     print(f"{key}:\n {figlet_gradient('DEMO', gradient=key, font='roman')}")
     
     # print(app.deck._slides[0].bindings)
     # app.action_last_slide()
