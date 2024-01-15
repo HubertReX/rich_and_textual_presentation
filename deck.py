@@ -288,13 +288,13 @@ def update(todo_id):
     "3. Bonus": {
         "align": "justify",
         "text": """
-## __BONUS__ Demo of local code assistant
+## Demo of local code assistant
 
 Toolchain:
 
-- `Continue` - VS Code plugin
-- `Ollama`   - framework for running local LLM models
 - `codelama` - open source, free LLM model by Meta
+- `Ollama`   - framework for running local LLM models
+- `Continue` - VS Code plugin
 
 [comment]: <> (https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 [comment]: <> (https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
