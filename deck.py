@@ -279,6 +279,12 @@ def update(todo_id):
         
 """,
     },
+    "3. Bonus - rich": {
+        "align": "center",
+        "text": figlet_gradient("BONUS", gradient="Orange Coral", font="slant"),
+        # slant, epic, alligator, block, cosmic, roman, script, rounded
+    },
+    
     "3. Bonus": {
         "align": "justify",
         "text": """
