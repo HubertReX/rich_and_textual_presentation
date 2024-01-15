@@ -124,12 +124,9 @@ CONTENT = {
 * 1️⃣ AI tools acceptance process
 * 2️⃣ GitHub Copilot live demo
 * 3️⃣ __Bonus__ - full local, totally free
+* 4️⃣ Summary + Q&A
 
 """,
-    },
-    "1. AI Image": {
-        "align": "justify",
-        "image_path": CYBORG_DEV_IMAGE_PATH,
     },
     "1. Acceptance process": {
         "align": "justify",
@@ -301,10 +298,14 @@ Toolchain:
 
 """,
     },
+        "4. Summary Image": {
+        "align": "justify",
+        "image_path": CYBORG_DEV_IMAGE_PATH,
+    },
     "The End - rich": {
         "align": "center",
         "text": figlet_gradient("Thank you!", gradient="Bloody Mary", font="roman"),
-            #f"[yellow]{pyfiglet.figlet_format('Thank you !', font='twin_cob')}[/]",
+        #f"[yellow]{pyfiglet.figlet_format('Thank you !', font='twin_cob')}[/]",
         # slant, epic, alligator, block, cosmic, roman, script, rounded
     },
     "PS": {
