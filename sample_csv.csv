@@ -1,0 +1,130 @@
+category;name;level;health;max_health;hp;agility;eloquence;money;max_items
+player;hero;1;500;600;80;120;100;400;2
+character;BARMAN_ABSINTHRAYNER;1;120;120;150;100;140;100;2
+character;BARMAN_ABSINTHRAYNER_001;1;120;120;150;100;140;100;2
+character;CLAPBACK_SWORD;1;120;120;150;100;140;100;2
+character;CLAPBACK_SWORD_001;1;120;120;150;100;140;100;2
+character;HAMMER_HOAXHEART;1;120;120;150;100;140;100;2
+character;HAMMER_HOAXHEART_001;1;120;120;150;100;140;100;2
+character;MADAME_SARCASMIA;1;120;120;150;100;140;100;2
+character;MADAME_SARCASMIA_001;1;120;120;150;100;140;100;2
+character;POTIONEER_PUZZLEMINT;1;120;120;150;100;140;100;2
+character;POTIONEER_PUZZLEMINT_001;1;120;120;150;100;140;100;2
+character;beaver;1;200;200;120;160;170;0;2
+character;beaver_001;1;200;200;120;160;170;0;2
+character;beaver_002;1;200;200;120;160;170;0;2
+character;beaver_003;1;200;200;120;160;170;0;2
+character;beaver_004;1;200;200;120;160;170;0;2
+character;boar;1;200;200;120;160;170;0;2
+character;boar_001;1;200;200;120;160;170;0;2
+character;boar_002;1;200;200;120;160;170;0;2
+character;boar_003;1;200;200;120;160;170;0;2
+character;boar_004;1;200;200;120;160;170;0;2
+character;cat;1;200;200;120;160;170;0;2
+character;cat_001;1;200;200;120;160;170;0;2
+character;cat_002;1;200;200;120;160;170;0;2
+character;cat_003;1;200;200;120;160;170;0;2
+character;chicken;1;200;200;120;160;170;0;2
+character;chicken_001;1;200;200;120;160;170;0;2
+character;chicken_002;1;200;200;120;160;170;0;2
+character;chicken_003;1;200;200;120;160;170;0;2
+character;chicken_004;1;200;200;120;160;170;0;2
+character;cow;1;200;200;120;160;170;0;2
+character;cow_001;1;200;200;120;160;170;0;2
+character;cow_002;1;200;200;120;160;170;0;2
+character;cow_003;1;200;200;120;160;170;0;2
+character;cow_004;1;200;200;120;160;170;0;2
+character;cow_005;1;200;200;120;160;170;0;2
+character;cow_006;1;200;200;120;160;170;0;2
+character;dog;1;200;200;120;160;170;0;2
+character;dog_001;1;200;200;120;160;170;0;2
+character;dog_002;1;200;200;120;160;170;0;2
+character;fairy;1;400;400;150;180;200;500;2
+character;fairy_001;1;400;400;150;180;200;500;2
+character;floater;1;200;200;120;160;170;100;2
+character;floater_001;1;200;200;120;160;170;100;2
+character;floater_002;1;200;200;120;160;170;100;2
+character;ghost;1;200;200;120;160;170;100;2
+character;ghost_001;1;200;200;120;160;170;100;2
+character;hedgehog;1;200;200;120;160;170;0;2
+character;hedgehog_001;1;200;200;120;160;170;0;2
+character;hedgehog_002;1;200;200;120;160;170;0;2
+character;hedgehog_003;1;200;200;120;160;170;0;2
+character;merchant;1;200;200;120;160;170;100;2
+character;merchant_001;1;200;200;120;160;170;100;2
+character;monster;1;200;200;120;160;170;100;2
+character;monster_001;1;200;200;120;160;170;100;2
+character;pig;1;200;200;120;160;170;0;2
+character;pig_001;1;200;200;120;160;170;0;2
+character;pig_002;1;200;200;120;160;170;0;2
+character;pig_003;1;200;200;120;160;170;0;2
+character;pig_004;1;200;200;120;160;170;0;2
+character;pig_005;1;200;200;120;160;170;0;2
+character;pig_006;1;200;200;120;160;170;0;2
+character;pig_007;1;200;200;120;160;170;0;2
+character;pig_008;1;200;200;120;160;170;0;2
+character;skeleton;1;200;200;120;160;170;100;2
+character;skeleton_001;1;200;200;120;160;170;100;2
+character;skeleton_002;1;200;200;120;160;170;100;2
+character;skeleton_003;1;200;200;120;160;170;100;2
+character;skeleton_004;1;200;200;120;160;170;100;2
+character;solitary;1;300;300;150;150;150;30;2
+character;solitary_001;1;300;300;150;150;150;30;2
+character;squirrel;1;200;200;120;160;170;0;2
+character;squirrel_001;1;200;200;120;160;170;0;2
+character;squirrel_002;1;200;200;120;160;170;0;2
+character;squirrel_003;1;200;200;120;160;170;0;2
+character;troll;1;500;500;210;200;210;999;2
+character;troll_001;1;500;500;210;200;210;999;2
+character;wolf;1;200;200;120;160;170;0;2
+character;wolf_001;1;200;200;120;160;170;0;2
+character;wolf_002;1;200;200;120;160;170;0;2
+character;wolf_003;1;200;200;120;160;170;0;2
+character;wolf_004;1;200;200;120;160;170;0;2
+character;wolf_005;1;200;200;120;160;170;0;2
+item;GNOMES_WHISKER;MAP09_RIVER_58x33.M_LOCATION_FOREST_NAME;;;1;0;-1;800;2
+item;MERMAIDS_TEAR;MAP09_RIVER_58x59.M_LOCATION_FOREST_NAME;;;0;1;-1;800;2
+item;PHOENIX_FEATHER;MAP09_RIVER_43x58.M_LOCATION_FOREST_NAME;;;-1;0;1;800;2
+item;POTION_CURSE_NO_MORE;;;;10;0;-10;1000;2
+item;amulet;;;;789;-10;0;160;2
+item;glasses;MAP01_MAIN_06x14.M_LOCATION_SWAMP_NAME;;;-30;0;65;30;2
+item;gloves;MAP01_MAIN_19x08.M_LOCATION_FOREST_NAME;;;50;-50;0;35;2
+item;oil;MAP01_MAIN_18x04.M_LOCATION_FOREST_NAME;;;0;30;-40;10;2
+item;pants;;;;0;25;-50;30;2
+item;shield;;;;90;-70;0;50;2
+item;shoes;MAP01_MAIN_05x10.M_LOCATION_SWAMP_NAME;;;0;20;-25;15;2
+item;slingshot;MAP03_SANDSTONE_05x08.M_LOCATION_TUNNEL_NAME;;;5;0;-5;5;2
+item;stick;MAP01_MAIN_13x15.M_LOCATION_FOREST_NAME;;;20;-30;0;5;2
+item;sword;;;;150;0;-80;60;2
+item;treasure;MAP08_MAZE_06x11.M_LOCATION_MAZE_NAME;;;0;0;0;100;2
+quest;01_coc_long;len(coc) > 0;0;0;0;5;0;0;2
+quest;01_get_gloves;'gloves' in hero.inventory.items;0;0;0;0;15;0;0
+quest;01_johnny_walker;hero.unique_loc_visited_cnt >= 100;0;0;0;0;0;0;2
+quest;01_main_01;"characters[""troll_001""].is_met == True";0;50;0;1;0;0;0
+quest;02_coc_2in1;coc != coc.upper();0;0;0;5;0;0;0
+quest;02_fight_fairy;"characters[""fairy_001""].is_met == True and characters[""fairy_001""].hp <= 0";0;0;15;0;0;0;0
+quest;02_game_mechanics;FALSE;0;20;0;1;0;0;0
+quest;02_items_collector;len(hero.inventory.items) >= 3;0;0;20;0;0;0;0
+quest;03_coc_comment;_ in coc;0;0;0;5;0;0;0
+quest;03_lucky_luke_beginner;hero.searched_loc >= 5;0;0;0;5;0;0;0
+quest;03_speed_run;FALSE;0;20;0;0;0;0;0
+quest;03_tomb_rider;"curr_loc.name_key==""MAP08_MAZE_06x11"" and curr_loc.is_searched";100;0;0;0;0;0;0
+quest;04_coc_for;hero.coc_for;0;0;0;5;0;0;0
+quest;04_lucky_luke_master;hero.searched_loc >= 10;0;0;0;15;0;0;0
+quest;05_coc_until;hero.coc_until;0;0;0;5;0;0;0
+quest;06_coc_cmd;hero.coc_cmd;0;0;0;5;0;0;0
+quest;Q00_S00_WHAT_IS_GOING_ON;"characters[""CLAPBACK_SWORD_001""].dialog.key == ""015""";0;0;0;10;0;0;0
+quest;Q01_S00_BREAK_THE_CURSE;FALSE;0;100;0;0;0;0;0
+quest;Q01_S01_LEARN_ABOUT_CURSE;"characters[""BARMAN_ABSINTHRAYNER_001""].dialog.key == ""012""";0;0;0;10;0;0;0
+quest;Q01_S05_BREAK_THE_CURSE_MEET_MADAME_SARCASMIA;"characters[""MADAME_SARCASMIA_001""].dialog.key == ""SARCASMIA_AA_BACK_SO_SOON""";0;0;0;0;50;0;0
+quest;Q01_S06_BREAK_THE_CURSE_GAIN_POTION_CURSE_NO_MORE;'POTION_CURSE_NO_MORE' in hero.inventory.items;70;0;0;0;0;0;0
+quest;Q01_S07_BREAK_THE_CURSE_FIND_A_SAFE_PLACE;FALSE;0;0;50;100;0;0;0
+quest;Q02_S00_TRINKETS_FOR_SARCASMIA;FALSE;0;0;0;50;0;0;0
+quest;Q02_S01_TRINKETS_FOR_SARCASMIA_MERMAIDS_TEAR;'MERMAIDS_TEAR' in hero.inventory.items;0;0;0;10;0;0;0
+quest;Q02_S02_TRINKETS_FOR_SARCASMIA_GNOMES_WHISKER;'GNOMES_WHISKER' in hero.inventory.items;0;0;0;10;0;0;0
+quest;Q02_S03_TRINKETS_FOR_SARCASMIA_PHOENIX_FEATHER;'PHOENIX_FEATHER' in hero.inventory.items;0;0;0;10;0;0;0
+quest;Q03_S00_LEARN_ABOUT_CURSE;FALSE;0;0;0;10;0;0;0
+quest;Q03_S01_WHO_HAS_MORE_KNOWLEDGE;"characters[""POTIONEER_PUZZLEMINT_001""].dialog.key == ""014"" or characters[""POTIONEER_PUZZLEMINT_001""].dialog.key == ""017""";0;0;0;0;0;0;0
+quest;Q03_S02_WHERE_TO_FIND_THIS_PERSON;"characters[""HAMMER_HOAXHEART_001""].dialog.key == ""009""";0;0;0;10;0;0;0
+quest;Q03_SO3_HOW_TO_GET_THERE;"characters[""BARMAN_ABSINTHRAYNER_001""].dialog.key == ""017""";0;0;0;0;0;0;0
+quest;talk_to_solitary;"characters[""solitary_001""].is_met == True and characters[""solitary_001""].eloquence == 0";0;0;0;0;15;0;0

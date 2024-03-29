@@ -1,1 +1,8 @@
 spiel
+rich
+textual
+textual-dev
+click
+pyperclip
+trogon
+# pipx install frogmouth
