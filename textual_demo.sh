@@ -17,6 +17,9 @@ cd samples_textual
 run_step python -m textual
 run_step textual easing
 run_step python calculator.py
+run_step python calculator.py --inline
 run_step python code_browser.py
 run_step python markdown.py
 
+# run_step python calculator.py --inline
+run_step ./in.py pride.py

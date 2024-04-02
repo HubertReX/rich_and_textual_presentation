@@ -1,45 +1,65 @@
 # III. Textual
 
-* overview [www](https://textual.textualize.io/)
-  * python -m textual
+## Overview
+
+* [www](https://textual.textualize.io/)
+  
+```bash
+pip install textual
+pip install textual-dev
+pip install "textual[syntax]"
+```
+
+* features list
   * TUI not GUI
   * CSS
+  * mouse support
   * documentation
   * ssh
-  * web
-  * samples textual
-  * list of reference projects [link](https://github.com/davep/transcendent-textual)
+  * web (experimental)
+  * list of reference projects
+    * [GitHub Repo](https://github.com/davep/transcendent-textual)
 
-```bash
-./textual_demo.sh
-```
+  ```bash
+  ./textual_demo.sh
+  ```
+
+***
 
 ## Frogmouth
 
-Markdown browser [link](https://github.com/Textualize/frogmouth)
+Markdown browser
+
+* [GitHub Repo](https://github.com/Textualize/frogmouth)
 
 ```bash
+pipx install frogmouth
+# or 
+brew tap textualize/homebrew
+brew install frogmouth
+
+# run
 frogmouth README.md
 ```
 
+***
+
 ## Trogon
 
-auto-generated TUI for command line [link](https://github.com/Textualize/trogon)
+Auto-generated TUI for command line apps
+
+* [GitHub Repo](https://github.com/Textualize/trogon)
 
 ```bash
-cd samples_trogon
-export PATH=$PATH:~/Documents/Projects/rich_and_textual_presentation/samples_trogon
+pip install trogon
+
+# run
+# cd samples_trogon
+# export PATH=$PATH:~/Documents/Projects/rich_and_textual_presentation/samples_trogon
 
 python todo_list_manager.py
 ```
 
-## TUI Map generator
-
-```bash
-cd ~/Documents/Projects/tui-map-generator/src/tui_map_generator
-export PATH=$PATH:~/Documents/Projects/tui-map-generator/src/tui_map_generator
-
-poetry run python src/tui_map_generator tui
-```
+***
 
 ## [back](./README.md)

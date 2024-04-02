@@ -4,7 +4,7 @@
 
 ## Formatting
 
-**bold** ~~strike~~ _italic_ ==marked== H~2~o
+**bold** ~~strike~~ _italic_ ==marked==
 
 [link](https://github.com/Textualize/rich)
 

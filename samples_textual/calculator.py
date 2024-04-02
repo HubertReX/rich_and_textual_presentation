@@ -5,6 +5,7 @@ Works like a real calculator. Click the buttons or press the equivalent keys.
 """
 
 from decimal import Decimal
+import sys
 
 from textual import events, on
 from textual.app import App, ComposeResult
@@ -168,4 +169,9 @@ class CalculatorApp(App):
 
 
 if __name__ == "__main__":
-    CalculatorApp().run()
+    inline = False
+    if len(sys.argv) > 1:
+        param1 = sys.argv[1]
+        if param1 == "--inline":
+            inline = True
+    CalculatorApp().run(inline=inline)
