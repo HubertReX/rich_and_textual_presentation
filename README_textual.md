@@ -12,11 +12,17 @@ pip install "textual[syntax]"
 
 * features list
   * TUI not GUI
-  * CSS
   * mouse support
-  * documentation
   * ssh
   * web (experimental)
+  
+  ```bash
+  pipx install textual-web
+  
+  ./serve_textual_web.sh
+  ```
+  
+  * documentation
   * list of reference projects
     * [GitHub Repo](https://github.com/davep/transcendent-textual)
 

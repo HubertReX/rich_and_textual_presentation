@@ -1,0 +1,7 @@
+[account]
+
+
+[app."Code Browser"]
+command = "python samples_textual/code_browser.py"
+
+[terminal.Terminal]

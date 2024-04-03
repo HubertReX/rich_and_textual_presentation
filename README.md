@@ -1,10 +1,15 @@
-# Rich and Textual presentation
+# Rich and Textual
 
-Presentation prepared using Spiel (with Textual)
+Command line tools
 
-## I. Will McGugan
+* terminal vs shell
+* legacy issues
+* different OS compatibility
+* poor UI
 
-CEO of Textualize, freelance software engineer living in Edinburgh.
+## I. Textualize
+
+Will McGugan, CEO of Textualize, freelance software engineer living in Edinburgh.
 
 * [www](https://www.willmcgugan.com/)
 
