@@ -1,6 +1,6 @@
-spiel
 rich
 textual
+textual[syntax]
 textual-dev
 click
 pyperclip

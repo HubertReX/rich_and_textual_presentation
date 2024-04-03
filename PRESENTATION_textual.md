@@ -45,7 +45,7 @@ brew tap textualize/homebrew
 brew install frogmouth
 
 # run
-frogmouth README.md
+frogmouth PRESENTATION.md
 ```
 
 ***
@@ -68,4 +68,4 @@ python todo_list_manager.py
 
 ***
 
-## [back](./README.md)
+## [back](./PRESENTATION.md)

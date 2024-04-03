@@ -34,4 +34,4 @@ pipx install rich-cli
 brew install rich
 ```
 
-## [back](./README.md)
+## [back](./PRESENTATION.md)
